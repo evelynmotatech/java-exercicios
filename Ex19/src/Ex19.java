@@ -13,7 +13,7 @@ public class Ex19 {
 
         for(i = 0; i < 4; i++){
             System.out.println("Digite um nome ");
-            String nome = leitor.nextLine();
+            String nome = leitor.next();
 
             System.out.println("Digite seu sexo ");
             String genero = leitor.nextLine();

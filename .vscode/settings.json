@@ -1,5 +1,9 @@
 {
     "java.project.sourcePaths": [
+        "Ex25/src",
+        "Ex24/src",
+        "Ex23/src",
+        "Ex22/src",
         "Ex21/src",
         "Ex20/src",
         "Ex19/src",
@@ -21,6 +25,6 @@
         "Ex03/src",
         "Ex02/src",
         "Ex01/src",
-        "Ex22/src"
+        "Ex26/src"
     ]
 }

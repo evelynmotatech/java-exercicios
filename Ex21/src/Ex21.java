@@ -19,7 +19,7 @@ public class Ex21 {
 
         while(repetir == 's' || repetir == 'S'){
             System.out.println("Digite o nome do canditado:");
-            nome = leitor.nextLine();
+            nome = leitor.next();
             System.out.println("Digite o sexo do canditado: F - Feminino | M - Masculino");
             sexo = leitor.next().charAt(0);;
             System.out.println("Digite a idade do canditado:");

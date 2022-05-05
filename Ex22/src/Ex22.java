@@ -7,18 +7,24 @@ public class Ex22 {
     public static void main(String[] args) throws Exception {
         Scanner leitor = new Scanner(System.in);
         int i = 0;
+        String nomeProduto;
         float valorCusto;
         float valorVenda;
-        float mediaCustoVenda;
+        float totalCusto = 0.0f;
+        float totalVenda = 0.0f;
 
         
         for(i = 0; i < 40; i++){
+            System.out.println("Digite o nome do produto");
+            nomeProduto = leitor.next();
             System.out.println("Digite o valor do custo do produto");
             valorCusto = leitor.nextFloat();
             System.out.println("Digite o valor de venda do produto");
             valorVenda = leitor.nextFloat();
             
-            mediaCustoVenda = ((valorCusto+valorVenda)/2);
+            totalCusto = totalCusto + valorCusto;
+            totalVenda = totalVenda + valorVenda;
+            
             if(valorVenda > valorCusto){
                 System.out.println("Houve lucro.");
             }else if(valorVenda == valorCusto){
@@ -26,10 +32,10 @@ public class Ex22 {
             }else{
                 System.out.println("Houve prejuízo.");
             }
-            System.out.println("Preço de custo: " +valorCusto);
-            System.out.println("Preço de venda: " +valorVenda);
-            System.out.println("Média de custo e venda: " + mediaCustoVenda);
+            System.out.println(nomeProduto + ": Preço de custo= R$" +valorCusto+ " e Preço de venda= R$" +valorVenda);
         }
     
+        System.out.println("A média do preço de custo é R$" + (totalCusto/i));
+        System.out.println("A média do preço de venda é R$" + (totalVenda/i));
     }
 }
